@@ -23,7 +23,7 @@ This is a **template repo**. Click **Use this template → Create a new reposito
 
 _What is your scenario, where will you play, and what is the single hard bet you're making?_
 
-___
+Plumb is an AI integration platform that starts with dining software vendors serving hospitals and senior living in Canada and the US, betting that ready-made templates and AI Mapping with measured confidence let a vendor's implementation person connect a new customer's EHR without an integration engineer, instead of selling AI Mapping on its own as a plug-in.
 
 ## How to submit
 
