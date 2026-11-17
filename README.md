@@ -2,6 +2,8 @@
 
 > My final project for Product School's **Product Leadership** certification. One scenario, **Fable Growth** (B2C) or **Meridian Foundations** (B2B), or my own instructor-approved initiative, taken from a board-ready product strategy to a complete business case across six in-class labs.
 
+**My scenario:** Meridian Foundations (B2B). Meridian is the construction project-management platform; the challenge is making it indispensable to field teams while keeping the enterprise depth its largest customers pay for.
+
 This is a **template repo**. Click **Use this template → Create a new repository**, name it something like `product-leadership-final`, and fill in one folder per deliverable as you go. This is an **individual project**: your work is yours alone.
 
 ---
