@@ -1,25 +1,25 @@
-# Outcome Roadmap & Trade-off Memo
+# Outcome Roadmap & Trade-off Memo: Plumb: AI integration platform
 
 > Module 2 · Turn Your Strategy into an Outcome Roadmap
 
 ## 1. Trade-off memo
 
-> **Rock 1:** _____
+> **Rock 1:** Setup wizard working in Real mode (supports KR2). Today the template wizard only runs in Demo mode. KR2 needs a vendor's implementation person to go from a synthetic EHR sample to the first live message in under 30 minutes, alone, in a demo. That only happens if the wizard runs end to end on the real platform, with real connections. It's also the demo that wins the first design partner.
 >
-> **Rock 2:** _____
+> **Rock 2:** Per-site overrides on a shared template (supports KR3). KR3 needs a second sample site set up from the same template in under 1 hour, without help. Overrides let a vendor build the template once and change only what differs at each site, such as codes, facility IDs, and schedules. Without them, every site is a rebuild, and vendors won't believe Plumb scales past their first customer.
 >
-> **Rock 3:** _____
+> **Rock 3:** Security controls for real patient data (supports KR1). A vendor won't sign until it knows Plumb can handle real patient data safely. Encryption at rest, an audit log, and a Canada or US region per workspace are what a vendor and its customers' IT teams check first. Without them, the security review stops the deal.
 >
-> **Hard no 1:** _____
+> **Hard no 1:** POS to GL journal template. The engine is already built, so it's tempting to finish. But it serves food-service operators and their finance teams, a different buyer from dining software vendors. Shipping it now would bring back the "three buyers at once" confusion. It waits until the healthcare segment is working.
 >
-> **Hard no 2:** _____
+> **Hard no 2:** X12 EDI ordering with distributors. Distributors already have large EDI teams and contracts, and they're a participant later, not a first customer. X12 parsing, AS2, and catalogue matching are months of work that move none of this quarter's KRs.
 >
-> **Hard no 3:** _____
+> **Hard no 3:** Outbound-only on-site agent (Windows). It's the strongest long-term answer to the access problem, so this one hurts. But I don't know the partner's EHR yet. If it's PointClickCare or Epic, their own API or marketplace may be the faster route, and the agent would be wasted effort. I'll build it once a partner's sites show they need it.
 
 ## 2. Outcome roadmap
 
 | Horizon | Outcome / bet | Owning team(s) | Success signal |
 |---|---|---|---|
-| Now (0 to 3 mo) | _____ | _____ | _____ |
-| Next (3 to 6 mo) | _____ | _____ | _____ |
-| Later (6 to 12 mo) | _____ | _____ | _____ |
+| Now (0 to 3 mo) | We bet that the setup wizard running a care-to-dining template end to end in Real mode, on synthetic EHR data, will prove "live in days" in a live demo, so dining software vendors agree to a pilot (KR2); We bet that showing per-site overrides across two sample customer sites will prove one template serves every site, so vendors see Plumb scales past their first customer (KR3); We bet that encryption at rest, an audit log, and a Canada or US region per workspace will let a vendor's security review pass before signing, removing the main reason to say "not yet" (KR1) | Josh (product and engineering, with AI); prospective vendors give feedback in demos | A vendor's implementation person goes from synthetic EHR sample to first live message in a demo alone in under 30 minutes; a second sample site is set up from the same template in under 1 hour, without help; one dining vendor signs as a design partner by March 31, 2027, with no blocking items from its security review |
+| Next (3 to 6 mo) | First design partner live and paying on real patient data, because it needs the partner signed in Now, and billing can stay manual for one partner; FHIR R4 connector for the partner's EHR, because the partner's EHR decides which API and resources to build first; Drift watch with plain-English triage, because it only matters once real feeds are live and can change; Customer workspaces with Owner and Approver roles, because a demo needs one login and a live partner team needs roles; SOC 2 Type I, because Now builds the controls and the audit needs them running first | Josh (product and engineering, with AI); the partner's implementation lead; an outside auditor for SOC 2 | First live message within 5 working days of EHR access, with access time under 4 weeks; the partner's feed runs over FHIR with no custom code; a changed feed is caught and fixed with one approval and zero lost messages; two or more partner users sign in with separate roles; SOC 2 Type I report issued |
+| Later (6 to 12 mo) | Bet: an outbound-only on-site agent will bring access time under 2 weeks for sites with no EHR API; Bet: an embedded "Connect your EHR" setup inside the vendor's product will let its customers start connections without calling the vendor; Bet: feeding approved corrections back into AI Mapping will cut fields needing review below 10% across partners; Bet: per-connection usage metering will let billing scale past a handful of partners; Bet: a second lane (POS to GL for operators, or X12 ordering with distributors) will grow revenue once healthcare dining is working | Not staffed. Each needs revenue or a second partner first | Access time under 2 weeks at agent sites; most new connections started from the embedded setup; review rate below 10% from the third partner on; invoices generated from usage data; first paying customer in a second lane |
