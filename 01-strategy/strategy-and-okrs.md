@@ -24,9 +24,11 @@ Plumb is an integration platform I'm building that uses AI to connect different 
 
 > **Objective:** Make Plumb the way a dining software vendor connects a new customer's EHR, without an integration engineer.
 >
-> - **KR1:** One dining software vendor is live and paying per connection on Plumb by March 31, 2027, and sends every new customer site through Plumb instead of its old way.
-> - **KR2:** Once a new customer site grants EHR access, the partner's implementation person gets to the first live message in under 5 working days, without help from me. We track the time to get access separately and work to bring it under 4 weeks.
-> - **KR3:** The partner connects a second customer site from the same template in under 1 working day, with fewer than 20% of fields needing human review.
+> - **KR1:** One dining software vendor is signed as a design partner by March 31, 2027.
+> - **KR2:** In a demo, a vendor's implementation person takes a care-to-dining template from synthetic EHR sample to first live message in under 30 minutes, without help.
+> - **KR3:** A vendor's implementation person sets up a second sample site from the same template in under 1 hour, without help.
+>
+> _Updated in Module 2: I don't expect to sign a design partner for at least 3 months, so KR1 now targets signing, and "live and paying" moves to next quarter. KR2 and KR3 now measure the wizard and template reuse in demos until a partner is live. The real-site version of KR2 (first live message within 5 working days of EHR access, with access time under 4 weeks) moves to next quarter._
 
 ## 4. AI pressure-test
 
